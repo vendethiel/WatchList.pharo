@@ -25,11 +25,6 @@ WatchListDB >> login [
 ]
 
 { #category : 'database' }
-WatchListDB >> newSession [
-	^ WatchListDescriptorSystem sessionForLogin: self login
-]
-
-{ #category : 'database' }
 WatchListDB >> withSession: block [
 	|session|
 	session := WatchListDescriptorSystem sessionForLogin: self login.
