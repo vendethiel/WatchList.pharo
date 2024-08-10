@@ -17,6 +17,7 @@ BaselineOfWatchList >> baseline: spec [
 		spec
 			baseline: 'SQLite3'
 			with: [ spec repository: 'github://pharo-rdbms/Pharo-SQLite3/src' ].
+			"TODO group: 'glorp'"
 		
 		spec
 			baseline: 'Glorp'

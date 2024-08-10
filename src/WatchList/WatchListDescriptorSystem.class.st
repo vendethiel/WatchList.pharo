@@ -62,22 +62,26 @@ WatchListDescriptorSystem >> descriptorForToWatchShow: descriptor [
 WatchListDescriptorSystem >> tableForSHOW: table [
 	(table createFieldNamed: 'id' type: platform serial)
 		bePrimaryKey.
-	table
+	(table
 		createFieldNamed: 'name'
-		type: (platform varChar: 255).
-	table 
+		type: (platform text))
+		beNullable: false.
+	(table 
 		createFieldNamed: 'icon'
-		type: (platform varChar: 255).
-	table
+		type: (platform text))
+		beNullable: false.
+	(table
 		createFieldNamed: 'date'
-		type: platform date.
+		type: platform date)
+		beNullable: false.
 ]
 
 { #category : 'descriptors' }
 WatchListDescriptorSystem >> tableForTOWATCHSHOW: table [
 	(table createFieldNamed: 'show' type: platform integer)
 		bePrimaryKey.
-	table
+	(table
 		createFieldNamed: 'season'
-		type: platform integer.
+		type: platform integer)
+		beNullable: false.
 ]
