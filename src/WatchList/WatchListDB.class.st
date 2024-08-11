@@ -1,3 +1,6 @@
+"
+WatchList Database definitions
+"
 Class {
 	#name : 'WatchListDB',
 	#superclass : 'Object',

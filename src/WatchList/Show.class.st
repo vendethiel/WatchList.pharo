@@ -1,3 +1,6 @@
+"
+Data definition for a show, metadata for our watchlist items
+"
 Class {
 	#name : 'Show',
 	#superclass : 'Object',
@@ -5,7 +8,8 @@ Class {
 		'id',
 		'name',
 		'icon',
-		'date'
+		'date',
+		'seasons'
 	],
 	#category : 'WatchList',
 	#package : 'WatchList'
@@ -57,4 +61,16 @@ Show >> name [
 Show >> name: anObject [
 
 	name := anObject
+]
+
+{ #category : 'accessing' }
+Show >> seasons [
+
+	^ seasons
+]
+
+{ #category : 'accessing' }
+Show >> seasons: anObject [
+
+	seasons := anObject
 ]

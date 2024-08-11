@@ -43,6 +43,9 @@ WatchListDescriptorSystem >> descriptorForShow: descriptor [
 	(descriptor newMapping: DirectMapping)
 		from: #date
 		to: (table fieldNamed: 'date').
+	(descriptor newMapping: DirectMapping)
+		from: #seasons
+		to: (table fieldNamed: 'seasons').
 ]
 
 { #category : 'descriptors' }
@@ -66,14 +69,16 @@ WatchListDescriptorSystem >> tableForSHOW: table [
 		createFieldNamed: 'name'
 		type: (platform text))
 		beNullable: false.
-	(table 
+	table 
 		createFieldNamed: 'icon'
-		type: (platform text))
-		beNullable: false.
+		type: (platform text).
 	(table
 		createFieldNamed: 'date'
 		type: platform date)
 		beNullable: false.
+	table 
+		createFieldNamed: 'seasons'
+		type: (platform integer).
 ]
 
 { #category : 'descriptors' }

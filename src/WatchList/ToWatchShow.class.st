@@ -1,3 +1,6 @@
+"
+Represents an entry in a watch list for a show
+"
 Class {
 	#name : 'ToWatchShow',
 	#superclass : 'ToWatchItem',

@@ -4,11 +4,16 @@ Class {
 	#instVars : [
 		'api'
 	],
-	#category : 'WatchList',
-	#package : 'WatchList'
+	#category : 'WatchList-API',
+	#package : 'WatchList-API'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'accessing' }
+ShowFetcher >> api: anAPI [ 
+	api := anAPI
+]
+
+{ #category : 'data source updates' }
 ShowFetcher >> refreshEntriesIn: session [
 	session inUnitOfWorkDo: [ 
 		api newToday select: [ :show |
