@@ -1,3 +1,6 @@
+"
+A Show instance returned from an API
+"
 Class {
 	#name : 'APIShow',
 	#superclass : 'Object',
@@ -62,5 +65,9 @@ APIShow >> seasons: anObject [
 { #category : 'api - converting' }
 APIShow >> toModel [
 	^ Show new
-		name: name
+		name: name;
+		date: date;
+		icon: icon;
+		seasons: seasons
+		yourself
 ]

@@ -1,3 +1,16 @@
+"
+Show fetcher.
+
+Use this to pull:
+
+```
+YOURDBHERE new withSession: [ :session |
+      |fetcher|
+      fetcher := ShowFetcher new api: YOURAPIHERE.
+      fetcher refreshEntriesIn: session.
+]
+```
+"
 Class {
 	#name : 'ShowFetcher',
 	#superclass : 'Object',
