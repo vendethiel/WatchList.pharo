@@ -24,9 +24,18 @@ BaselineOfWatchList >> baseline: spec [
 			with: [ spec repository: 'github://pharo-rdbms/glorp' ].
 
 		"Packages"
+		spec package: 'WatchList-API'.
+		spec package: 'WatchList-API-Tests'.
+		spec package: 'WatchList-Data'.
+		spec
+			package: 'WatchList-UI'
+			with: [ spec requires: #('Toplo') ].
 		spec
 			package: 'WatchList'
-			with: [ spec requires: #('Toplo' 'SQLite3' 'Glorp') ].
+			with: [ spec requires: #(
+				'WatchList-API' 'WatchList-Data' 'WatchList-UI'
+				'SQLite3' 'Glorp' 
+			) ].
 	]
 ]
 
