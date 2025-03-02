@@ -19,7 +19,7 @@ WatchListWindow >> refresh [
 		node addChild: lab.
 	].
 	l dataAccessor addAll: items.
-	l innerContainer requestFocus.
+	l requestFocus.
 	l openInInnerWindow.
 ]
 
