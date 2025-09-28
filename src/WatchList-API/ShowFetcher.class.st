@@ -21,6 +21,11 @@ Class {
 	#package : 'WatchList-API'
 }
 
+{ #category : 'api - instantiation' }
+ShowFetcher class >> withApi: api [
+  ^ self new api: api; yourself.
+]
+
 { #category : 'accessing' }
 ShowFetcher >> api: anAPI [ 
 	api := anAPI

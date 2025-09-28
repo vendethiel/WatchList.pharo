@@ -13,6 +13,9 @@ BaselineOfWatchList >> baseline: spec [
 		spec
 			baseline: 'Toplo'
 			with: [ spec repository: 'github://pharo-graphics/Toplo/src' ].
+		spec
+			baseline: 'SpecToplo'
+			with: [ spec repository: 'github://pharo-graphics/Spec-Toplo:master/src' ].
 		
 		spec
 			baseline: 'SQLite3'

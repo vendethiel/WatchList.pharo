@@ -1,31 +1,34 @@
 Class {
 	#name : 'WatchListWindow',
-	#superclass : 'Object',
+	#superclass : 'SpPresenter',
 	#instVars : [
-		'items'
+		'table'
 	],
 	#category : 'WatchList-UI',
 	#package : 'WatchList-UI'
 }
 
+{ #category : 'layout' }
+WatchListWindow >> defaultLayout [
+	^ SpBoxLayout newTopToBottom 
+		add: table;
+		yourself.
+]
+
 { #category : 'api - updating' }
-WatchListWindow >> refresh [
-	|l|
-	l := ToListElement new nodeBuilder: [ :node :dataItem :holder |
-		|lab|
-		lab := ToLabel new
-			text: dataItem name;
-			yourself.
-		node addChild: lab.
-	].
-	l dataAccessor addAll: items.
-	l requestFocus.
-	l openInInnerWindow.
+WatchListWindow >> initializePresenters [ 
+	table := self newTable
+	"	addColumn: (SpStringTableColumn ."
+]
+
+{ #category : 'api - updating' }
+WatchListWindow >> initializeWindow: wp [
+	wp
+		title: 'WatchList';
+		initialExtent: 800@600.
 ]
 
 { #category : 'api - updating' }
 WatchListWindow >> withItems: newItems [
-	items := newItems.
-	self refresh.
-	
+	table items: newItems.
 ]

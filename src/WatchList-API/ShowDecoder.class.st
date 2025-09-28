@@ -1,3 +1,6 @@
+"
+Parses a payload into a Show
+"
 Class {
 	#name : 'ShowDecoder',
 	#superclass : 'Object',
