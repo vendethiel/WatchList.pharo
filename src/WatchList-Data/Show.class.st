@@ -11,8 +11,8 @@ Class {
 		'date',
 		'seasons'
 	],
-	#category : 'WatchList',
-	#package : 'WatchList'
+	#category : 'WatchList-Data',
+	#package : 'WatchList-Data'
 }
 
 { #category : 'accessing' }

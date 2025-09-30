@@ -18,6 +18,13 @@ WatchListWindow >> defaultLayout [
 { #category : 'api - updating' }
 WatchListWindow >> initializePresenters [ 
 	table := self newTable
+		addColumn: (SpStringTableColumn title: 'Name'
+			evaluated: #name);
+		addColumn: (SpStringTableColumn title: 'Date'
+			evaluated: #date);
+		addColumn: (SpStringTableColumn title: '# of Seasons'
+			evaluated: #seasons);
+		yourself.
 	"	addColumn: (SpStringTableColumn ."
 ]
 

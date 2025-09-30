@@ -4,8 +4,8 @@ WatchList Database definitions
 Class {
 	#name : 'WatchListDB',
 	#superclass : 'Object',
-	#category : 'WatchList',
-	#package : 'WatchList'
+	#category : 'WatchList-DB',
+	#package : 'WatchList-DB'
 }
 
 { #category : 'database - specific' }

@@ -4,8 +4,8 @@ Descriptor system for WatchList classes
 Class {
 	#name : 'WatchListDescriptorSystem',
 	#superclass : 'DescriptorSystem',
-	#category : 'WatchList',
-	#package : 'WatchList'
+	#category : 'WatchList-DB',
+	#package : 'WatchList-DB'
 }
 
 { #category : 'accessing' }

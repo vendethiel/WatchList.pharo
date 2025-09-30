@@ -8,8 +8,8 @@ Class {
 		'show',
 		'season'
 	],
-	#category : 'WatchList',
-	#package : 'WatchList'
+	#category : 'WatchList-DB',
+	#package : 'WatchList-DB'
 }
 
 { #category : 'accessing' }
